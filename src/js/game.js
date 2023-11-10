@@ -1,5 +1,5 @@
-export default class Game{
-   constructor(){
+export default class Game {
+   constructor() {
       this.reset();
 
    }
@@ -13,11 +13,11 @@ export default class Game{
          this.playfield[clickedIndex] = this.currentPlayer;
       }
    }
-   
+
    switchPlayer() {
       this.currentPlayer = this.currentPlayer === 'X' ? '0' : 'X';
    }
-//проверка есть ли победитель
+   //проверка есть ли победитель
    checkWinner() {
       this.winCombination = [
          [0, 1, 2],
@@ -29,7 +29,7 @@ export default class Game{
          [0, 4, 8],
          [2, 4, 6],
       ]
-      for (let item of this.winCombination){      
+      for (let item of this.winCombination) {
          const [a, b, c] = item;
          if (this.playfield[a] && this.playfield[a] === this.playfield[b] && this.playfield[a] === this.playfield[c]) {
             return true;
@@ -39,10 +39,10 @@ export default class Game{
    }
    getState() {
       return {
-         currentPlayer:this.currentPlayer
+         currentPlayer: this.currentPlayer
       }
    }
-//проверка на ничью
+   //проверка на ничью
    checkDraw() {
       return !this.playfield.includes('');
    }

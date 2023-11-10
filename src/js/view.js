@@ -2,7 +2,7 @@ export default class View {
    constructor() {
       this.blocks = document.querySelectorAll('.block');
       this.winnerName = document.querySelector('.winner-name');
-      this.winnerBlock=document.querySelector('.winner')
+      this.winnerBlock = document.querySelector('.winner')
       this.currentName = document.querySelector('.player-name');
    }
    reset() {

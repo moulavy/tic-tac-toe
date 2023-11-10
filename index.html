@@ -4,33 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Крестики нолики</title>
-        <link rel="stylesheet" href="./src/assets/style/index.css">
+        <link rel="stylesheet" href="./src/assets/style/index.css" />
     </head>
     <body>
-      
-      <h1 class="title">Крестики-нолики</h1>
-      <div class="container">
-        <div class="playfield">
-            <button class="block one-block" data-index="0"></button>
-            <button  class="block two-block" data-index="1"></button>
-            <button  class="block three-block" data-index="2"></button>
-            <button  class="block four-block" data-index="3"></button>
-            <button  class="block five-block" data-index="4"></button>
-            <button  class="block six-block" data-index="5"></button>
-            <button  class="block seven-block" data-index="6"></button>
-            <button  class="block eight-block" data-index="7"></button>
-            <button  class="block nine-block" data-index="8"></button>
+        <h1 class="title">Крестики-нолики</h1>
+        <div class="container">
+            <div class="playfield">
+                <button class="block one-block" data-index="0"></button>
+                <button class="block two-block" data-index="1"></button>
+                <button class="block three-block" data-index="2"></button>
+                <button class="block four-block" data-index="3"></button>
+                <button class="block five-block" data-index="4"></button>
+                <button class="block six-block" data-index="5"></button>
+                <button class="block seven-block" data-index="6"></button>
+                <button class="block eight-block" data-index="7"></button>
+                <button class="block nine-block" data-index="8"></button>
+            </div>
+            <div class="info">
+                <div class="player">
+                    <p class="player-name"></p>
+                </div>
+                <div class="winner display-hide">
+                    <p class="winner-name"></p>
+                </div>
+            </div>
         </div>
-        <div class="info">
-         <div class="player">
-            <p class="player-name"></p>
-         </div>
-         <div class="winner display-hide">            
-            <p class="winner-name"></p>
-         </div>
-        </div>
-</div>
         <button class="btn-reset">Начать заново</button>
-        <script type='module' src="./src/js/index.js"></script>
+        <script type="module" src="./src/js/index.js"></script>
     </body>
 </html>
